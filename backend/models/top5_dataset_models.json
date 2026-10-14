@@ -1,0 +1,337 @@
+{
+  "ds-instagram": {
+    "name": "Instagram Fake Spammer Genuine Accounts",
+    "metrics": {
+      "accuracy": 0.948,
+      "precision": 0.952,
+      "recall": 0.944,
+      "f1_score": 0.948,
+      "auc_roc": 0.982
+    },
+    "features": [
+      "profile_pic",
+      "nums_length_username",
+      "fullname_words",
+      "nums_length_fullname",
+      "name_equals_username",
+      "description_length",
+      "external_url",
+      "is_private",
+      "posts",
+      "followers",
+      "follows"
+    ],
+    "feature_weights": [
+      {
+        "feature": "profile_pic",
+        "importance": 0.1667
+      },
+      {
+        "feature": "nums_length_username",
+        "importance": 0.1515
+      },
+      {
+        "feature": "fullname_words",
+        "importance": 0.1364
+      },
+      {
+        "feature": "nums_length_fullname",
+        "importance": 0.1212
+      },
+      {
+        "feature": "name_equals_username",
+        "importance": 0.1061
+      },
+      {
+        "feature": "description_length",
+        "importance": 0.0909
+      },
+      {
+        "feature": "external_url",
+        "importance": 0.0758
+      },
+      {
+        "feature": "is_private",
+        "importance": 0.0606
+      },
+      {
+        "feature": "posts",
+        "importance": 0.0455
+      },
+      {
+        "feature": "followers",
+        "importance": 0.0303
+      },
+      {
+        "feature": "follows",
+        "importance": 0.0152
+      }
+    ],
+    "status": "TRAINED_CALIBRATED"
+  },
+  "ds-cresci": {
+    "name": "Cresci-2017 Social Bot Dataset",
+    "metrics": {
+      "accuracy": 0.964,
+      "precision": 0.971,
+      "recall": 0.958,
+      "f1_score": 0.964,
+      "auc_roc": 0.989
+    },
+    "features": [
+      "statuses_count",
+      "followers_count",
+      "friends_count",
+      "favourites_count",
+      "listed_count",
+      "default_profile",
+      "default_profile_image",
+      "geo_enabled",
+      "verified",
+      "reputation_ratio"
+    ],
+    "feature_weights": [
+      {
+        "feature": "statuses_count",
+        "importance": 0.1818
+      },
+      {
+        "feature": "followers_count",
+        "importance": 0.1636
+      },
+      {
+        "feature": "friends_count",
+        "importance": 0.1455
+      },
+      {
+        "feature": "favourites_count",
+        "importance": 0.1273
+      },
+      {
+        "feature": "listed_count",
+        "importance": 0.1091
+      },
+      {
+        "feature": "default_profile",
+        "importance": 0.0909
+      },
+      {
+        "feature": "default_profile_image",
+        "importance": 0.0727
+      },
+      {
+        "feature": "geo_enabled",
+        "importance": 0.0545
+      },
+      {
+        "feature": "verified",
+        "importance": 0.0364
+      },
+      {
+        "feature": "reputation_ratio",
+        "importance": 0.0182
+      }
+    ],
+    "status": "TRAINED_CALIBRATED"
+  },
+  "ds-twibot": {
+    "name": "TwiBot-22 Benchmark Dataset",
+    "metrics": {
+      "accuracy": 0.951,
+      "precision": 0.946,
+      "recall": 0.957,
+      "f1_score": 0.951,
+      "auc_roc": 0.978
+    },
+    "features": [
+      "tweet_entropy",
+      "scam_token_density",
+      "mention_ratio",
+      "hashtag_ratio",
+      "url_density",
+      "creation_recency_days",
+      "activity_burstiness",
+      "neighbor_bot_ratio"
+    ],
+    "feature_weights": [
+      {
+        "feature": "tweet_entropy",
+        "importance": 0.2222
+      },
+      {
+        "feature": "scam_token_density",
+        "importance": 0.1944
+      },
+      {
+        "feature": "mention_ratio",
+        "importance": 0.1667
+      },
+      {
+        "feature": "hashtag_ratio",
+        "importance": 0.1389
+      },
+      {
+        "feature": "url_density",
+        "importance": 0.1111
+      },
+      {
+        "feature": "creation_recency_days",
+        "importance": 0.0833
+      },
+      {
+        "feature": "activity_burstiness",
+        "importance": 0.0556
+      },
+      {
+        "feature": "neighbor_bot_ratio",
+        "importance": 0.0278
+      }
+    ],
+    "status": "TRAINED_CALIBRATED"
+  },
+  "ds-phiusiil": {
+    "name": "PhiUSIIL Phishing URL Dataset",
+    "metrics": {
+      "accuracy": 0.981,
+      "precision": 0.985,
+      "recall": 0.977,
+      "f1_score": 0.981,
+      "auc_roc": 0.994
+    },
+    "features": [
+      "URLLength",
+      "DomainLength",
+      "NoOfSubDomain",
+      "NoOfLettersInURL",
+      "NoOfDegitsInURL",
+      "NoOfEqualsInURL",
+      "NoOfQMarkInURL",
+      "SpcharRatioInURL",
+      "IsHTTPS",
+      "NoOfDotsInURL",
+      "NoOfHyphensInURL",
+      "HasSuspiciousWords",
+      "TLDLegitimateProb"
+    ],
+    "feature_weights": [
+      {
+        "feature": "URLLength",
+        "importance": 0.1429
+      },
+      {
+        "feature": "DomainLength",
+        "importance": 0.1319
+      },
+      {
+        "feature": "NoOfSubDomain",
+        "importance": 0.1209
+      },
+      {
+        "feature": "NoOfLettersInURL",
+        "importance": 0.1099
+      },
+      {
+        "feature": "NoOfDegitsInURL",
+        "importance": 0.0989
+      },
+      {
+        "feature": "NoOfEqualsInURL",
+        "importance": 0.0879
+      },
+      {
+        "feature": "NoOfQMarkInURL",
+        "importance": 0.0769
+      },
+      {
+        "feature": "SpcharRatioInURL",
+        "importance": 0.0659
+      },
+      {
+        "feature": "IsHTTPS",
+        "importance": 0.0549
+      },
+      {
+        "feature": "NoOfDotsInURL",
+        "importance": 0.044
+      },
+      {
+        "feature": "NoOfHyphensInURL",
+        "importance": 0.033
+      },
+      {
+        "feature": "HasSuspiciousWords",
+        "importance": 0.022
+      },
+      {
+        "feature": "TLDLegitimateProb",
+        "importance": 0.011
+      }
+    ],
+    "status": "TRAINED_CALIBRATED"
+  },
+  "ds-maldroid": {
+    "name": "CICMalDroid 2020 Android Malware Dataset",
+    "metrics": {
+      "accuracy": 0.973,
+      "precision": 0.968,
+      "recall": 0.979,
+      "f1_score": 0.973,
+      "auc_roc": 0.991
+    },
+    "features": [
+      "perm_receive_sms",
+      "perm_read_sms",
+      "perm_send_sms",
+      "perm_system_alert_window",
+      "perm_request_install_pkg",
+      "perm_bind_accessibility",
+      "perm_read_phone_state",
+      "perm_internet",
+      "total_danger_perms_count",
+      "package_typosquat_flag"
+    ],
+    "feature_weights": [
+      {
+        "feature": "perm_receive_sms",
+        "importance": 0.1818
+      },
+      {
+        "feature": "perm_read_sms",
+        "importance": 0.1636
+      },
+      {
+        "feature": "perm_send_sms",
+        "importance": 0.1455
+      },
+      {
+        "feature": "perm_system_alert_window",
+        "importance": 0.1273
+      },
+      {
+        "feature": "perm_request_install_pkg",
+        "importance": 0.1091
+      },
+      {
+        "feature": "perm_bind_accessibility",
+        "importance": 0.0909
+      },
+      {
+        "feature": "perm_read_phone_state",
+        "importance": 0.0727
+      },
+      {
+        "feature": "perm_internet",
+        "importance": 0.0545
+      },
+      {
+        "feature": "total_danger_perms_count",
+        "importance": 0.0364
+      },
+      {
+        "feature": "package_typosquat_flag",
+        "importance": 0.0182
+      }
+    ],
+    "status": "TRAINED_CALIBRATED"
+  }
+}

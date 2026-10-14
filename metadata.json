@@ -1,0 +1,6 @@
+{
+  "name": "Digital Risk Protection Platform",
+  "description": "AI-powered social and app monitoring platform detecting fake profiles, impersonation, scam accounts, phishing URLs, and suspicious mobile apps.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

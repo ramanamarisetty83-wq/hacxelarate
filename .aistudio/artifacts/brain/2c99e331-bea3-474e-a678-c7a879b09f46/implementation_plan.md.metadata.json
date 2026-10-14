@@ -1,0 +1,6 @@
+{
+  "summary": "Architectural implementation plan for the Digital Risk Protection Platform (DRPP), featuring a modern cybersecurity command center for detecting, correlating, and taking down fake social profiles, phishing URLs, and rogue mobile apps targeting ApexPay. Includes 9 core pages, interactive attack campaign graph with drilldown drawer, explainable risk scoring engine (0-100), full REST API client with offline fallback, and production-ready Python ML pipeline code.",
+  "updatedAt": "2026-10-13T14:58:37.943393324Z",
+  "requestFeedback": true,
+  "userFacing": true
+}
