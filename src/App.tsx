@@ -33,6 +33,7 @@ import { IndicScamRadar } from './pages/IndicScamRadar';
 import { CanaryDeception } from './pages/CanaryDeception';
 import { DatasetTrainingStudio } from './pages/DatasetTrainingStudio';
 import { Login } from './pages/Login';
+import { ThreeCyberBackground } from './components/ThreeCyberBackground';
 import { Mic, Bot } from 'lucide-react';
 
 export default function App() {
@@ -204,7 +205,10 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex font-sans antialiased">
+    <div className="min-h-screen bg-slate-950 text-slate-100 flex font-sans antialiased relative selection:bg-rose-600 selection:text-white">
+      {/* Ambient 3D Cyber Defense Background with Slow-Down Controls */}
+      <ThreeCyberBackground currentLang={currentLang} />
+
       {/* Toast Notification */}
       {notification && (
         <div className="fixed bottom-6 right-20 z-50 animate-in slide-in-from-bottom duration-200">
@@ -282,6 +286,7 @@ export default function App() {
               {currentPath === '/dashboard' && dashboardStats && (
                 <Dashboard
                   stats={dashboardStats}
+                  brandName={brand.brand_name}
                   onSelectThreat={handleSelectThreat}
                   onUpdateStatus={handleUpdateStatus}
                   onNavigateToCampaigns={() => setCurrentPath('/campaigns')}

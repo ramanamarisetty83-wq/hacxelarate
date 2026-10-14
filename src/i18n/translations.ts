@@ -41,6 +41,12 @@ export const translations: Record<Language, Record<string, string>> = {
     badgeCorrelated: 'CORRELATED',
     badgeUnique: 'UNIQUE',
     badgeMl: 'TRAINED',
+    threeDBackground: '3D Cyber Defense Hologram',
+    threeDSlowDown: 'Slow Down (0.25x)',
+    threeDUltraSlow: 'Ultra-Slow (0.1x)',
+    threeDNormal: 'Normal (1.0x)',
+    threeDPause: 'Pause 3D',
+    threeDResume: 'Resume 3D',
 
     // Dashboard
     activeCampaignAlert: 'Active Campaign Correlated',
@@ -143,6 +149,12 @@ export const translations: Record<Language, Record<string, string>> = {
     badgeCorrelated: 'సమన్వయం',
     badgeUnique: 'ప్రత్యేకం',
     badgeMl: 'ట్రైన్డ్',
+    threeDBackground: '3D సైబర్ రక్షణ హోలోగ్రామ్',
+    threeDSlowDown: 'స్లో మోషన్ (0.25x)',
+    threeDUltraSlow: 'చాలా నెమ్మదిగా (0.1x)',
+    threeDNormal: 'సాధారణ వేగం (1.0x)',
+    threeDPause: 'ఆపివేయి',
+    threeDResume: 'మళ్ళీ ప్రారంభించు',
 
     // Dashboard
     activeCampaignAlert: 'క్రియాశీల సైబర్ దాడి ప్రచారం కనుగొనబడింది',
@@ -245,6 +257,12 @@ export const translations: Record<Language, Record<string, string>> = {
     badgeCorrelated: 'सहसंबद्ध',
     badgeUnique: 'विशिष्ट',
     badgeMl: 'प्रशिक्षित',
+    threeDBackground: '3D साइबर सुरक्षा होलोग्राम',
+    threeDSlowDown: 'धीमा करें (0.25x)',
+    threeDUltraSlow: 'अति-धीमा (0.1x)',
+    threeDNormal: 'सामान्य गति (1.0x)',
+    threeDPause: 'रोकें',
+    threeDResume: 'पुनः आरंभ करें',
 
     // Dashboard
     activeCampaignAlert: 'सक्रिय संगठित साइबर हमला कैंपेन पाया गया',
@@ -347,6 +365,12 @@ export const translations: Record<Language, Record<string, string>> = {
     badgeCorrelated: 'सहसंबंधित',
     badgeUnique: 'खास',
     badgeMl: 'प्रशिक्षित',
+    threeDBackground: '3D सायबर सुरक्षा होलोग्राम',
+    threeDSlowDown: 'गती मंद करा (0.25x)',
+    threeDUltraSlow: 'अतिशय मंद (0.1x)',
+    threeDNormal: 'सामान्य गती (1.0x)',
+    threeDPause: 'थांबवा',
+    threeDResume: 'पुन्हा सुरू करा',
 
     // Dashboard
     activeCampaignAlert: 'सक्रिय सायबर हल्ला मोहीम शोधली गेली',

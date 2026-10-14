@@ -464,6 +464,19 @@ function generateAssistantAnswer(
     }
   }
 
+  // Query 5: 3D Animations & Slow Down
+  if (q.includes('3d') || q.includes('animation') || q.includes('slow') || q.includes('speed') || q.includes('background') || q.includes('నెమ్మది') || q.includes('धीमा') || q.includes('मंद')) {
+    if (lang === 'te') {
+      return `ప్లాట్‌ఫామ్‌లో ఇప్పుడు 3D సైబర్ స్పేస్ నేపధ్య యానిమేషన్‌లు మరియు ఇంటరాక్టివ్ 3D షీల్డ్ రాడార్ ఉన్నాయి! స్క్రీన్ ఎడమ దిగువన ఉన్న 3D కంట్రోలర్ ద్వారా మీరు యానిమేషన్ వేగాన్ని 0.25x (స్లో మోషన్), 0.1x (చాలా నెమ్మదిగా) లేదా సాధారణ వేగానికి మార్చవచ్చు. డ్యాష్‌బోర్డ్‌లో మీరు 3D రాడార్ షీల్డ్‌ను మౌస్‌తో తిప్పి చూడవచ్చు!`;
+    } else if (lang === 'hi') {
+      return `प्लेटफ़ॉर्म में 3D साइबर स्पेस बैकग्राउंड एनिमेशन और लाइव 3D शील्ड रडार शामिल है! स्क्रीन के निचले बाएं कोने में स्थित HUD से आप गति को 0.25x (धीमा), 0.1x (अति-धीमा) या सामान्य पर सेट कर सकते हैं। डैशबोर्ड पर आप 3D शील्ड को घुमाकर उपग्रह खतरों का निरीक्षण कर सकते हैं!`;
+    } else if (lang === 'mr') {
+      return `प्लॅटफॉर्मवर आता 3D सायबर स्पेस बॅकग्राउंड अॅनिमेशन आणि 3D शील्ड रडार उपलब्ध आहे! डाव्या कोपऱ्यातील कंट्रोलरवरून तुम्ही गती 0.25x (मंद), 0.1x (अतिशय मंद) किंवा सामान्य करू शकता. डॅशबोर्डवर 3D शील्ड फिरवून तुम्ही धोक्यांचे उपग्रह निरीक्षण करू शकता!`;
+    } else {
+      return `The platform features a Three.js 3D Cyber Defense ambient background and an interactive 3D Holographic Threat Radar widget! You can control the speed using the HUD at the bottom left: presets include 0.25x (Slow Down recommended), 0.1x (Ultra Slow), and Normal. You can also click and drag the 3D shield on the Dashboard to inspect threat satellite orbits!`;
+    }
+  }
+
   // Default Fallback
   if (lang === 'te') {
     return `${brand} బ్రాండ్ రక్షణ కోసం DRPP AI సిద్ధంగా ఉంది. మొత్తం ${threats.length} ముప్పులు పర్యవేక్షించబడుతున్నాయి. మీరు క్రిటికల్ అలర్ట్‌లు, క్యాంపెయిన్ గ్రాఫ్ లేదా ఏదైనా డొమైన్/యాప్ రిస్క్ గురించి అడగవచ్చు.`;

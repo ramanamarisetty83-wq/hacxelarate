@@ -25,6 +25,7 @@ import {
   Cell,
 } from 'recharts';
 import { Language, getTranslation } from '../i18n/translations';
+import { ThreeShieldRadar } from '../components/ThreeShieldRadar';
 
 interface DashboardProps {
   stats: DashboardStats;
@@ -32,6 +33,7 @@ interface DashboardProps {
   onUpdateStatus?: (id: string, status: ThreatStatus) => void;
   onNavigateToCampaigns: () => void;
   currentLang: Language;
+  brandName?: string;
 }
 
 export const Dashboard: React.FC<DashboardProps> = ({
@@ -40,6 +42,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
   onUpdateStatus,
   onNavigateToCampaigns,
   currentLang,
+  brandName = 'ApexPay',
 }) => {
   const [filterType, setFilterType] = useState<string>('ALL');
 
@@ -166,6 +169,15 @@ export const Dashboard: React.FC<DashboardProps> = ({
           <FileText className="w-5 h-5 text-sky-400" />
         </div>
       </div>
+
+      {/* Row 2.5: Interactive 3D Spatial Threat Radar & Defense Hologram */}
+      <ThreeShieldRadar
+        brandName={brandName}
+        criticalCount={stats.critical_threats}
+        totalThreats={stats.total_threats}
+        currentLang={currentLang}
+        onExploreCampaigns={onNavigateToCampaigns}
+      />
 
       {/* Row 3: Charts Section */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
